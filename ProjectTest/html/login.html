@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/loginStyle.css"/>
+
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">Generic Eletronics</h2>
+        <nav>
+            <a href="http://localhost:50426/html/products.html">Products</a>
+            <a href="http://localhost:50426/html/aboutUs.html">aboutUs</a>
+        </nav>
+
+    </header>
+
+    <div class="box">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <div class="inputBox">
+                <input type="text" required="required" id="username" />
+                <span>Username</span>
+                <i></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" required="required" id="password" />
+                <span>Password</span>
+                <i></i>
+            </div>
+
+            <div class="links">
+                <a href="#">Forgotten Password</a>
+                <a href="#">Remember Me</a>
+            </div>
+
+            <input type="submit" value="Login" onclick="login()" />
+        </form>
+    </div>
+
+    <script src="../js/login.js" defer></script>
+</body>
+</html>
